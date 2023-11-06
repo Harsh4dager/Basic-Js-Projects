@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100%;
+  width: 100%;
+}
+#main {
+  background: rgb(124, 219, 124);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#panel {
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  background: white;
+  border-radius: 10px;
+}
+#pTop {
+  width: 100%;
+  height: 15%;
+  background: rgb(44, 120, 44);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 0px 350px;
+}
+.elem {
+  color: white;
+  display: flex;
+  font-size: 10px;
+  gap: 4px;
+}
+.elem h2 {
+  display: flex;
+  align-items: center;
+}
+.Points {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px 10px;
+  background-color: white;
+  color: rgb(44, 120, 44);
+  border-radius: 10%;
+}
+#pBottom {
+  width: 100%;
+  height: 85%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.bubble {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 6px 10px;
+  background-color: white;
+  background-color: rgb(44, 120, 44);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bubble:hover {
+  background: rgb(105, 204, 105);
+  cursor: pointer;
+}

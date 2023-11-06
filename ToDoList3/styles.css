@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #9a99eb, #4f3ebd);
+  display: grid;
+  place-items: center;
+}
+.card {
+  width: 90%;
+  max-width: 470px;
+  background-color: white;
+  border-radius: 25px;
+}
+.card h1 {
+  font-size: 22px;
+  color: #383838;
+  margin: 15px 25px;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 25px;
+  position: relative;
+}
+.search input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 55px;
+  border-radius: 30px;
+  background: gainsboro;
+  flex: 1;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+.search button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 55px;
+  width: 100px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  background-color: rgb(246, 99, 46);
+  cursor: pointer;
+}
+.rest {
+  color: #383838;
+  list-style: none;
+  padding: 0;
+  margin: 35px 25px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tasks {
+  display: flex;
+  gap: 10px;
+}
+.task-items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.tasks button {
+  background: none;
+  width: fit-content;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+.checkbox {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  color: white;
+  font-size: small;
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+}
+.deletedTask {
+  display: none;
+}
